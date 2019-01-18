@@ -1,59 +1,77 @@
 // Navigation Styles here
 
+.background {
+    border-bottom: 2px dashed @navigation-border;
+}
 header {
+    padding-top: 5px;
+    margin: auto;
+    max-width: 800px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    text-align: center;
+    padding-bottom: 24px;
 
+        @media @mobile {
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 9px;
+        } 
+
+}
+
+header h1 {
     @media @mobile {
-        flex-direction: column;
-        justify-content: space-between;
-        padding-bottom: 10px;
+        font-size: 30px;
     }
 }
 
-    header h1 {
+nav {
+    margin-right: 3.75%;
+    width: 36%;
+    display: flex;
+    justify-content: space-between;
         @media @mobile {
-            font-size: 30px;
+            width: 80%;
+            margin-left: 3.5%;
         }
-    }
+}
 
-    .cheat-border {
-        border-bottom: 2px dashed @navigation-border;
-        height: 1px;
-    }
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding-top: 16px;
+}
 
-    nav {
-        display: flex;
-        justify-content: space-evenly;
-        width: 352px;
 
-        @media @mobile {
-            justify-content: space-around;
-            width: 100%;
-            padding-top: 15px;
-            padding-left: 15px;
-            padding-right: 15px;
-            padding-bottom: 0px;
-        }
-    }
 
-    header a{
-        font-size: 16px;
-        text-decoration: none;
-        color:black;
 
-    }
 
-    .firstImg {
-        @media @mobile {
-          
-            width: 93%;
-            margin-left: 16px;
-            border-radius: 1px;
-            
-        }
-    }
+
+
+
+
+// header {
+//     border-bottom: 2px dashed @navigation-border;
+//     text-align: center;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding-top: 15.5px;
+//     padding-bottom: 24px;
+//     background: hotpink;
+// }
+
+// h1{
+//     padding-left: 229px;
+// }
+
+// nav {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-right: 582px;
+//     width: 289px; 
+// }
+    
