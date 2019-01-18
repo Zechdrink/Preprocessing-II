@@ -1,1 +1,17 @@
 // Mixins in here
+.btn-custom(@height, @width, @background, @color){
+  height: @height;
+  width: @width;
+  background: @background;
+  color: @color;
+}
+
+.columned(){
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+
+}

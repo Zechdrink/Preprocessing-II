@@ -1,1 +1,77 @@
 // Navigation Styles here
+
+.background {
+    border-bottom: 2px dashed @navigation-border;
+}
+header {
+    padding-top: 5px;
+    margin: auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+
+        @media @mobile {
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 9px;
+        } 
+
+}
+
+header h1 {
+    @media @mobile {
+        font-size: 30px;
+    }
+}
+
+nav {
+    margin-right: 3.75%;
+    width: 36%;
+    display: flex;
+    justify-content: space-between;
+        @media @mobile {
+            width: 80%;
+            margin-left: 3.5%;
+        }
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding-top: 16px;
+}
+
+
+
+
+
+
+
+
+
+// header {
+//     border-bottom: 2px dashed @navigation-border;
+//     text-align: center;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding-top: 15.5px;
+//     padding-bottom: 24px;
+//     background: hotpink;
+// }
+
+// h1{
+//     padding-left: 229px;
+// }
+
+// nav {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-right: 582px;
+//     width: 289px; 
+// }
+    
