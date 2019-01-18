@@ -1,1 +1,18 @@
 // Mixins in here
+
+.custom-btn (@width: 300px, @height: 200px, @bgcolor: white, @font-color: black) {
+        width: @width;
+        height: @height;
+        background-color: @bgcolor;
+        color: @font-color;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 18px;
+        
+     &:hover {
+          //background-color: @font-color;
+          background-color: darken(@font-color, 75%);
+          color: @bgcolor;
+        }
+      }
